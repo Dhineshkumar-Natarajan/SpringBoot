@@ -1,13 +1,13 @@
-package com.payroll.service;
+package com.ecommerce.service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.payroll.model.User;
-import com.payroll.pojo.UserRequest;
-import com.payroll.repository.SignUpRepository;
+import com.ecommerce.model.User;
+import com.ecommerce.pojo.UserRequest;
+import com.ecommerce.repository.SignUpRepository;
 
 @Service
 public class SignUpSerivceImpl {

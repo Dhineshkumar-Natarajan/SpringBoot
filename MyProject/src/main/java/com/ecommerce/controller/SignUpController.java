@@ -1,4 +1,4 @@
-package com.payroll.controller;
+package com.ecommerce.controller;
 
 import java.util.Optional;
 
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.payroll.model.User;
-import com.payroll.pojo.UserRequest;
-import com.payroll.service.SignUpSerivceImpl;
+import com.ecommerce.model.User;
+import com.ecommerce.pojo.UserRequest;
+import com.ecommerce.service.SignUpSerivceImpl;
 
 @RestController
 @RequestMapping("/signUp")

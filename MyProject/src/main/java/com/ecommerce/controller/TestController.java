@@ -1,4 +1,4 @@
-package com.payroll.controller;
+package com.ecommerce.controller;
 
 public class TestController {
 

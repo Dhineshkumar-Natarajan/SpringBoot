@@ -1,8 +1,8 @@
-package com.payroll.repository;
+package com.ecommerce.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.payroll.model.User;
+import com.ecommerce.model.User;
 
 public interface SignUpRepository extends JpaRepository <User, String> {
 	

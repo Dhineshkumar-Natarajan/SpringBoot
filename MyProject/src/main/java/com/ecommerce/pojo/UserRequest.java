@@ -1,4 +1,4 @@
-package com.payroll.pojo;
+package com.ecommerce.pojo;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;

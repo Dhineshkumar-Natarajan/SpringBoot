@@ -1,4 +1,4 @@
-package com.payroll.model;
+package com.ecommerce.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

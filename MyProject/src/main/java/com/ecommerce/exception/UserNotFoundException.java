@@ -1,4 +1,4 @@
-package com.payroll.exception;
+package com.ecommerce.exception;
 
 public class UserNotFoundException extends RuntimeException {
 
