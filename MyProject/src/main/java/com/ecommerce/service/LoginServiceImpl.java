@@ -1,5 +1,5 @@
 package com.ecommerce.service;
 
-public class LoginServiceImpl {
+public class LoginServiceImpl implements LoginService {
 
 }

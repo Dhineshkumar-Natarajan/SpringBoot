@@ -10,7 +10,7 @@ import com.ecommerce.model.User;
 import com.ecommerce.repository.SignUpRepository;
 
 @Service
-public class SignUpSerivceImpl {
+public class SignUpSerivceImpl implements SignUpSerivce {
 	
 	@Autowired
 	SignUpRepository signUpRepository;
