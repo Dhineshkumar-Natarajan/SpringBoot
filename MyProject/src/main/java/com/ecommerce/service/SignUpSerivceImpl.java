@@ -5,8 +5,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.ecommerce.dto.UserRequest;
 import com.ecommerce.model.User;
-import com.ecommerce.pojo.UserRequest;
 import com.ecommerce.repository.SignUpRepository;
 
 @Service

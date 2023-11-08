@@ -1,4 +1,4 @@
-package com.ecommerce.pojo;
+package com.ecommerce.dto;
 
 public class ProductRequest {
 
