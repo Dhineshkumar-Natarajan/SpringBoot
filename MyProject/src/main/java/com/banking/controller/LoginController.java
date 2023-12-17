@@ -1,4 +1,4 @@
-package com.ecommerce.controller;
+package com.banking.controller;
 
 public class LoginController {
 	

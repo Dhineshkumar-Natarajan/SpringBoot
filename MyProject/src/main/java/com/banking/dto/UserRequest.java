@@ -1,4 +1,4 @@
-package com.ecommerce.dto;
+package com.banking.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class UserRequest {
 	
 	@NotNull(message = "userId should not be null")
-	private String userId;
+	private long userId;
 	
 	@NotNull(message = "userName should not be null")
 	private String userName;
@@ -33,11 +33,13 @@ public class UserRequest {
 	
 	private String userAddress;
 	
-	public String getUserId() {
+	private String accountType;
+
+	public long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 
@@ -57,14 +59,6 @@ public class UserRequest {
 		this.age = age;
 	}
 
-	public String getUserAddress() {
-		return userAddress;
-	}
-
-	public void setUserAddress(String userAddress) {
-		this.userAddress = userAddress;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -80,5 +74,20 @@ public class UserRequest {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	
+
+	public String getUserAddress() {
+		return userAddress;
+	}
+
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
 }

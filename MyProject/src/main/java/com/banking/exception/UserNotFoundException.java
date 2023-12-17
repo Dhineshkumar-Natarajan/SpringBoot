@@ -1,4 +1,4 @@
-package com.ecommerce.exception;
+package com.banking.exception;
 
 public class UserNotFoundException extends RuntimeException {
 

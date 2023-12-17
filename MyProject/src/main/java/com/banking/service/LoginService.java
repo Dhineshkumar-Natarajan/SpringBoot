@@ -1,4 +1,4 @@
-package com.ecommerce.service;
+package com.banking.service;
 
 public interface LoginService {
 

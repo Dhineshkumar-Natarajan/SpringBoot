@@ -1,13 +1,13 @@
-package com.ecommerce;
+package com.banking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcommerceApplication {
+public class BankingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EcommerceApplication.class, args);
+		SpringApplication.run(BankingApplication.class, args);
 	}
 
 }

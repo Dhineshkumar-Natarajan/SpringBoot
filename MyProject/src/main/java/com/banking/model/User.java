@@ -1,4 +1,4 @@
-package com.ecommerce.model;
+package com.banking.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,6 +16,7 @@ public class User {
 	private String email;
 	private String phoneNumber;
 	private String userAddress;
+	private String accountNumber;
 	
 	public String getUserId() {
 		return userId;
@@ -53,5 +54,10 @@ public class User {
 	public void setUserAddress(String userAddress) {
 		this.userAddress = userAddress;
 	}
-
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
 }
