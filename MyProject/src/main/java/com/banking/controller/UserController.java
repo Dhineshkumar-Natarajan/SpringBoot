@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,7 +23,7 @@ public class UserController {
 	@Autowired
 	IUserService userService;
 	
-	@GetMapping
+	@GetMapping("/getUser")
 	public ResponseEntity<?> getUserDetailsById(long id) {
 
 		UserResponse userResponse = userService.getUserDetailsById(id);
@@ -35,10 +36,10 @@ public class UserController {
 		return ResponseEntity.ok(mapResponse);
 	}
 
-	@PostMapping
-	public void addUser(UserRequest UserRequest) {
-
-		userService.addUser(UserRequest);
+	@PostMapping("/addUser")
+	public void addUser(@RequestBody UserRequest userRequest) {
+		
+		userService.addUser(userRequest);
 	}
 
 }

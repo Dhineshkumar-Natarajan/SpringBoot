@@ -15,9 +15,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserRequest {
 	
-	@NotNull(message = "userId should not be null")
-	private long userId;
-	
 	@NotNull(message = "userName should not be null")
 	private String userName;
 	
@@ -34,14 +31,6 @@ public class UserRequest {
 	private String userAddress;
 	
 	private String accountType;
-
-	public long getUserId() {
-		return userId;
-	}
-
-	public void setUserId(long userId) {
-		this.userId = userId;
-	}
 
 	public String getUserName() {
 		return userName;
@@ -90,4 +79,11 @@ public class UserRequest {
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
+
+	@Override
+	public String toString() {
+		return "UserRequest [userName=" + userName + ", age=" + age + ", email=" + email + ", phoneNumber="
+				+ phoneNumber + ", userAddress=" + userAddress + ", accountType=" + accountType + "]";
+	}
+	
 }

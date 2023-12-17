@@ -1,6 +1,7 @@
 package com.banking.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,7 +11,8 @@ import jakarta.persistence.Table;
 public class User {
 	
 	@Id
-	private String userId;
+	@GeneratedValue
+	private long userId;
 	private String userName;
 	private int age;
 	private String email;
@@ -18,10 +20,10 @@ public class User {
 	private String userAddress;
 	private String accountNumber;
 	
-	public String getUserId() {
+	public long getUserId() {
 		return userId;
 	}
-	public void setUserId(String userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 	public String getUserName() {
@@ -60,4 +62,12 @@ public class User {
 	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
+	
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName + ", age=" + age + ", email=" + email
+				+ ", phoneNumber=" + phoneNumber + ", userAddress=" + userAddress + ", accountNumber=" + accountNumber
+				+ "]";
+	}
+	
 }

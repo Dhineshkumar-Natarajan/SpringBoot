@@ -38,4 +38,10 @@ public class Account {
 	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
+
+	@Override
+	public String toString() {
+		return "Account [accountNumber=" + accountNumber + ", accountType=" + accountType + ", accountBalance="
+				+ accountBalance + "]";
+	}
 }
